@@ -1,4 +1,4 @@
-package com.wyp.spark.core
+package com.wyp.spark.core.wc
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
