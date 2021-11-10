@@ -26,7 +26,23 @@ Driver（socket客户端）控制台输出：
 ```log
 客户端数据发送完毕
 ```
-#### []()
+#### [024.分布式计算模拟 - 数据结构和分布式计算](https://www.bilibili.com/video/BV11A411L7CK?p=24)
+测试：
+先启动 Executor 和 Executor2， 再启动 Driver（socket客户端）
+Driver（socket客户端）控制台输出：
+```log
+客户端数据发送完毕
+```
+Executor 控制台输出：
+```log
+服务器启动，等待接收数据
+计算节点[9999]的计算结果为：List(2, 4)
+```
+Executor2 控制台输出：
+```log
+服务器启动，等待接收数据
+计算节点[8888]的计算结果为：List(6, 8)
+```
 
 #### []()
 
