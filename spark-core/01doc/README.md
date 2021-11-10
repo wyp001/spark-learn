@@ -15,7 +15,17 @@ Driver（socket客户端）控制台输出：
 客户端数据发送完毕
 ```
 #### [023.分布式计算模拟 - 客户端向服务器发送计算任务](https://www.bilibili.com/video/BV11A411L7CK?p=23)
-
+测试：
+先启动 Executor (socket服务端)，再启动 Driver（socket客户端）
+Executor (socket服务端)控制台输出：
+```log
+服务器启动，等待接收数据
+计算节点的计算结果为：List(2, 4, 6, 8)
+```
+Driver（socket客户端）控制台输出：
+```log
+客户端数据发送完毕
+```
 #### []()
 
 #### []()

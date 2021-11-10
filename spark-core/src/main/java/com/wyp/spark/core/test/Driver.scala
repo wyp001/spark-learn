@@ -9,12 +9,14 @@ object Driver {
     // 连接服务器
     val client = new Socket("localhost", 9999)
     val out: OutputStream = client.getOutputStream
+    val objOut = new ObjectOutputStream(out)
 
-    // 向服务端发送一个数字 2
-    out.write(2)
+    val task = new Task()
+    objOut.writeObject(task)
+    objOut.flush()
 
     // 关闭流和socket连接
-    out.close()
+    objOut.close()
     client.close()
     println("客户端数据发送完毕")
   }
