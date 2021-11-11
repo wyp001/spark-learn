@@ -45,8 +45,7 @@ Executor2 控制台输出：
 ```
 #### [032.核心编程 - RDD - 创建 - 内存](https://www.bilibili.com/video/BV11A411L7CK?p=32)
 #### [033.核心编程 - RDD - 创建 - 文件](https://www.bilibili.com/video/BV11A411L7CK?p=33)
-
-#### []()
+#### [034.核心编程 - RDD - 创建 - 文件1](https://www.bilibili.com/video/BV11A411L7CK?p=34)
 
 #### []()
 
