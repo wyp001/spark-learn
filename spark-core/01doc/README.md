@@ -46,10 +46,14 @@ Executor2 控制台输出：
 #### [032.核心编程 - RDD - 创建 - 内存](https://www.bilibili.com/video/BV11A411L7CK?p=32)
 #### [033.核心编程 - RDD - 创建 - 文件](https://www.bilibili.com/video/BV11A411L7CK?p=33)
 #### [034.核心编程 - RDD - 创建 - 文件1](https://www.bilibili.com/video/BV11A411L7CK?p=34)
-
-#### []()
-
-#### []()
+#### [035.RDD - 集合数据源 - 分区的设定](https://www.bilibili.com/video/BV11A411L7CK?p=35)
+#### [036.RDD - 集合数据源 - 分区数据的分配](https://www.bilibili.com/video/BV11A411L7CK?p=36)
+指定并行分区数为2 
+```scala
+val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
+```
+运行程序后，在output目录下生成了2个分区文件
+![img.png](images/img.png)
 
 #### []()
 
