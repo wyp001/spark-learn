@@ -62,6 +62,16 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 #### [042.SparkCore - 核心编程 - RDD - 转换算子 - map - 小功能](https://www.bilibili.com/video/BV11A411L7CK?p=42)
 #### [043.SparkCore - 核心编程 - RDD - 转换算子 - map - 并行计算效果演示](https://www.bilibili.com/video/BV11A411L7CK?p=43)
 #### [044.SparkCore - 核心编程 - RDD - 转换算子 - mapPartitions](https://www.bilibili.com/video/BV11A411L7CK?p=44)
+运行 Spark02_RDD_Operator_Transform 结果：
+由于指定了两个分区，因此会有连个迭代器在执行，控制台中会打印两次 >>>>>>>>>>
+```log
+>>>>>>>>>>
+>>>>>>>>>>
+2
+4
+6
+8
+```
 #### [045.SparkCore - 核心编程 - RDD - 转换算子 - mapPartitions - 小练习](https://www.bilibili.com/video/BV11A411L7CK?p=45)
 #### [046.SparkCore - 核心编程 - RDD - 转换算子 - mapPartitions & map的区别 - 完成比完美更重要](https://www.bilibili.com/video/BV11A411L7CK?p=46)
 #### [047.SparkCore - 核心编程 - RDD - 转换算子 - mapPartitionsWithIndex](https://www.bilibili.com/video/BV11A411L7CK?p=47)
