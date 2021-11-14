@@ -53,7 +53,7 @@ Executor2 控制台输出：
 val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 ```
 运行程序后，在output目录下生成了2个分区文件
-![img.png](images/img.png)
+![img.png](README/images/img.png)
 #### [037.SparkCore - 核心编程 - RDD - 文件数据源 - 分区的设定](https://www.bilibili.com/video/BV11A411L7CK?p=37)
 #### [038.SparkCore - 核心编程 - RDD - 文件数据源 - 分区数据的分配](https://www.bilibili.com/video/BV11A411L7CK?p=38)
 #### [039.SparkCore - 核心编程 - RDD - 文件数据源 - 分区数据的分配 - 案例分析](https://www.bilibili.com/video/BV11A411L7CK?p=39)
@@ -80,6 +80,12 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 #### [048.SparkCore - 核心编程 - RDD - 转换算子 - flatMap](https://www.bilibili.com/video/BV11A411L7CK?p=48)
 #### [049.SparkCore - 核心编程 - RDD - 转换算子 - flatMap - 小练习](https://www.bilibili.com/video/BV11A411L7CK?p=49)
 #### [050.SparkCore - 核心编程 - RDD - 转换算子 - glom](https://www.bilibili.com/video/BV11A411L7CK?p=50)
+原始数据，分区数指定为2 后输出到output分区文件中如下：
+![image-20211114134830148](README/images/image-20211114134830148.png)
+![image-20211114135111031](README/images/image-20211114135111031.png)
+进过map算子操作后，输出到output1分区文件中如下
+![image-20211114135243848](README/images/image-20211114135243848.png)
+![image-20211114135303033](README/images/image-20211114135303033.png)
 #### [051.SparkCore - 核心编程 - RDD - 转换算子 - 理解分区不变的含义](https://www.bilibili.com/video/BV11A411L7CK?p=51)
 #### [052.SparkCore - 核心编程 - RDD - 转换算子 - groupBy](https://www.bilibili.com/video/BV11A411L7CK?p=52)
 #### [053.SparkCore - 核心编程 - RDD - 转换算子 - groupBy - shuffle来袭](https://www.bilibili.com/video/BV11A411L7CK?p=53)
