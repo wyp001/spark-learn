@@ -114,6 +114,8 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 #### [076.SparkCore - 核心编程 - RDD - 转换算子 - leftOuterJoin & rightOuterJoin](https://www.bilibili.com/video/BV11A411L7CK?p=76)
 #### [077.SparkCore - 核心编程 - RDD - 转换算子 - cogroup](https://www.bilibili.com/video/BV11A411L7CK?p=77)
 #### [078.SparkCore - 核心编程 - RDD - 案例实操 - 需求介绍 & 分析](https://www.bilibili.com/video/BV11A411L7CK?p=78)
+根据agent.log 日志数据 统计出每一个省份每个广告被点击数量排行的Top3
+![img.png](README/images/小案例1-分析.png)
 #### [079.SparkCore - 核心编程 - RDD - 案例实操 - 需求设计](https://www.bilibili.com/video/BV11A411L7CK?p=79)
 #### [080.SparkCore - 核心编程 - RDD - 案例实操 - 功能实现](https://www.bilibili.com/video/BV11A411L7CK?p=80)
 #### [081.SparkCore - 核心编程 - RDD - 行动算子 - 介绍](https://www.bilibili.com/video/BV11A411L7CK?p=81)
