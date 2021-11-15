@@ -1,14 +1,14 @@
-package com.wyp.spark.core.rdd.operator.persist
+package com.wyp.spark.core.rdd.persist
 
 import org.apache.spark.rdd.RDD
-import org.apache.spark.storage.StorageLevel
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Spark03_RDD_Persist {
+object Spark04_RDD_Persist {
 
   def main(args: Array[String]): Unit = {
     val sparConf = new SparkConf().setMaster("local").setAppName("Persist")
     val sc = new SparkContext(sparConf)
+    sc.setCheckpointDir("cp")
 
     val list = List("Hello Scala", "Hello Spark")
 
@@ -20,11 +20,10 @@ object Spark03_RDD_Persist {
       println("@@@@@@@@@@@@")
       (word, 1)
     })
-    // cache默认持久化的操作，只能将数据保存到内存中，如果想要保存到磁盘文件，需要更改存储级别
-    //mapRDD.cache()
-
-    // 持久化操作必须在行动算子执行时完成的。
-    mapRDD.persist(StorageLevel.DISK_ONLY)
+    // checkpoint 需要落盘，需要指定检查点保存路径
+    // 检查点路径保存的文件，当作业执行完毕后，不会被删除
+    // 一般保存路径都是在分布式存储系统：HDFS
+    mapRDD.checkpoint()
 
     val reduceRDD: RDD[(String, Int)] = mapRDD.reduceByKey(_ + _)
     reduceRDD.collect().foreach(println)

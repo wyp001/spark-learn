@@ -1,32 +1,30 @@
-package com.wyp.spark.core.rdd.operator.dep
+package com.wyp.spark.core.rdd.dep
 
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.RDD
+import org.apache.spark.{SparkConf, SparkContext}
 
-object Spark01_RDD_Dep {
+object Spark02_RDD_Dep {
 
   def main(args: Array[String]): Unit = {
 
-    val sparConf = new SparkConf().setMaster("local").setAppName("WordCount")
+    val sparConf = new SparkConf().setMaster("local").setAppName("Dep")
     val sc = new SparkContext(sparConf)
 
     val lines: RDD[String] = sc.textFile("datas/word.txt")
-    // toDebugString 输出 RDD 的血缘关系
-    println(lines.toDebugString)
+    println(lines.dependencies)
     println("*************************")
     val words: RDD[String] = lines.flatMap(_.split(" "))
-    println(words.toDebugString)
+    println(words.dependencies)
     println("*************************")
-    val wordToOne: RDD[(String, Int)] = words.map(word => (word, 1))
-    println(wordToOne.toDebugString)
+    val wordToOne = words.map(word => (word, 1))
+    println(wordToOne.dependencies)
     println("*************************")
     val wordToSum: RDD[(String, Int)] = wordToOne.reduceByKey(_ + _)
-    println(wordToSum.toDebugString)
+    println(wordToSum.dependencies)
     println("*************************")
     val array: Array[(String, Int)] = wordToSum.collect()
     array.foreach(println)
 
     sc.stop()
-
   }
 }

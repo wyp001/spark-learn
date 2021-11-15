@@ -1,4 +1,4 @@
-package com.wyp.spark.core.rdd.operator.serial
+package com.wyp.spark.core.rdd.serial
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
