@@ -142,6 +142,8 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 #### [102.SparkCore - 核心编程 - RDD - 持久化 - 区别](https://www.bilibili.com/video/BV11A411L7CK?p=102)
 #### [103.SparkCore - 核心编程 - RDD - 分区器 - 自定义数据分区规则](https://www.bilibili.com/video/BV11A411L7CK?p=103)
 #### [104.SparkCore - 核心编程 - RDD - 文件读取与保存](https://www.bilibili.com/video/BV11A411L7CK?p=104)
+运行 Spark01_RDD_IO_Save.java 以不同的方式将数据保存到 output1、output2、output3 文件目录下
+再运行 Spark01_RDD_IO_Load.java 将save保存的文件 加载到内存中
 #### [105.SparkCore - 核心编程 - 数据结构 -累加器 - 原理及简单演示](https://www.bilibili.com/video/BV11A411L7CK?p=105)
 #### [106.SparkCore - 核心编程 - 数据结构 -累加器 - 问题](https://www.bilibili.com/video/BV11A411L7CK?p=106)
 #### [107.SparkCore - 核心编程 - 数据结构 -累加器 - 自定义实现](https://www.bilibili.com/video/BV11A411L7CK?p=107)
