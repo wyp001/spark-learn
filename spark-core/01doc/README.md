@@ -18,6 +18,7 @@ Driver（socket客户端）控制台输出：
 测试：
 先启动 Executor (socket服务端)，再启动 Driver（socket客户端）
 Executor (socket服务端)控制台输出：
+
 ```log
 服务器启动，等待接收数据
 计算节点的计算结果为：List(2, 4, 6, 8)
@@ -145,6 +146,7 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 运行 Spark01_RDD_IO_Save.java 以不同的方式将数据保存到 output1、output2、output3 文件目录下
 再运行 Spark01_RDD_IO_Load.java 将save保存的文件 加载到内存中
 #### [105.SparkCore - 核心编程 - 数据结构 -累加器 - 原理及简单演示](https://www.bilibili.com/video/BV11A411L7CK?p=105)
+![image-123](README/images/image-20211115212503137.png)
 #### [106.SparkCore - 核心编程 - 数据结构 -累加器 - 问题](https://www.bilibili.com/video/BV11A411L7CK?p=106)
 #### [107.SparkCore - 核心编程 - 数据结构 -累加器 - 自定义实现](https://www.bilibili.com/video/BV11A411L7CK?p=107)
 #### [108.SparkCore - 核心编程 - 数据结构 -累加器 - 自定义实现 - 1](https://www.bilibili.com/video/BV11A411L7CK?p=108)
