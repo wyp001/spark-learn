@@ -1,5 +1,6 @@
 # spark-core 学习记录
 视频课程：[尚硅谷大数据Spark教程从入门到精通](https://www.bilibili.com/video/BV11A411L7CK)
+
 [TOC]
 
 #### [022.尚硅谷_SparkCore - 分布式计算模拟 - 搭建基础的架子](https://www.bilibili.com/video/BV11A411L7CK?p=22)
@@ -152,6 +153,7 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 #### [108.SparkCore - 核心编程 - 数据结构 -累加器 - 自定义实现 - 1](https://www.bilibili.com/video/BV11A411L7CK?p=108)
 #### [109.SparkCore - 核心编程 - 数据结构 - 广播变量](https://www.bilibili.com/video/BV11A411L7CK?p=109)
 #### [110.SparkCore - 案例实操 - 数据准备 & 数据说明](https://www.bilibili.com/video/BV11A411L7CK?p=110)
+![image-20211116204857780](README/images/110案例数据说明.png)
 #### [111.SparkCore - 案例实操 - 需求一 - 需求设计 & 思路梳理](https://www.bilibili.com/video/BV11A411L7CK?p=111)
 #### [112.SparkCore - 案例实操 - 需求一 - 功能实现 - 分别统计点击，下单，支付的数量](https://www.bilibili.com/video/BV11A411L7CK?p=112)
 #### [113.SparkCore - 案例实操 - 需求一 - 功能实现 - 合并点击，下单，支付的数量](https://www.bilibili.com/video/BV11A411L7CK?p=113)
