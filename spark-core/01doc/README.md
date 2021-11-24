@@ -245,6 +245,17 @@ E:\software\tools\netcat-win32-1.12>nc -lp 9999
 #### [190.SparkStreaming - DStream创建 - 自定义数据采集器](https://www.bilibili.com/video/BV11A411L7CK?p=190)
 #### [191.SparkStreaming - DStream创建 - Socket数据采集器源码解读](https://www.bilibili.com/video/BV11A411L7CK?p=191)
 #### [192.SparkStreaming - DStream创建 - Kafka数据源](https://www.bilibili.com/video/BV11A411L7CK?p=192)
+```shell
+# 查看kafka topic 列表
+bin/kafka-topics.sh --list --zookeeper 192.168.6.180:2181
+# 创建 spark-learn-topic topic (或者启动消费者的代码后会自动创建该topic)
+bin/kafka-topics.sh --create --zookeeper 192.168.6.180:2181 --replication-factor 3 --partitions 4 --topic spark-learn-topic
+# 使用命令启动生产者，向 spark-learn-topic 主题中发送数据
+bin/kafka-console-producer.sh --broker-list 192.168.6.180:9092 --topic spark-learn-topic
+```
+![img.png](README/images/191-sparkstreaming-kafka-01.png)
+SparkStreaming04_Kafka 程序的控制台中日志可以看到spark消费到了kafka中的数据
+![img.png](README/images/191-sparkstreaming-kafka-02.png)
 #### [193.SparkStreaming - DStream转换 - 状态操作](https://www.bilibili.com/video/BV11A411L7CK?p=193)
 #### [194.SparkStreaming - DStream转换 - 无状态操作 - transform](https://www.bilibili.com/video/BV11A411L7CK?p=194)
 #### [195.SparkStreaming - DStream转换 - 无状态操作 - join](https://www.bilibili.com/video/BV11A411L7CK?p=195)
