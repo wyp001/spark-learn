@@ -257,6 +257,12 @@ bin/kafka-console-producer.sh --broker-list 192.168.6.180:9092 --topic spark-lea
 SparkStreaming04_Kafka 程序的控制台中日志可以看到spark消费到了kafka中的数据
 ![img.png](README/images/191-sparkstreaming-kafka-02.png)
 #### [193.SparkStreaming - DStream转换 - 状态操作](https://www.bilibili.com/video/BV11A411L7CK?p=193)
+```shell
+C:\Users\TRXK-01>nc -lp 9999
+```
+![img.png](README/images/193-sparkstreaming-state-01.png)
+控制台中数据的为所有批次的汇总结果，而不是单个批次的结果，区别于 SparkStreaming01_WordCount.java 中的日志输出
+![img.png](README/images/193-sparkstreaming-state-02.png)
 #### [194.SparkStreaming - DStream转换 - 无状态操作 - transform](https://www.bilibili.com/video/BV11A411L7CK?p=194)
 #### [195.SparkStreaming - DStream转换 - 无状态操作 - join](https://www.bilibili.com/video/BV11A411L7CK?p=195)
 #### [196.SparkStreaming - DStream转换 - 有状态操作 - window](https://www.bilibili.com/video/BV11A411L7CK?p=196)
