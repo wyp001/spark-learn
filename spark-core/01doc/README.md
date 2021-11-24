@@ -231,6 +231,15 @@ val rdd: RDD[Int] = sc.makeRDD(List(1, 2, 3, 4), 2)
 #### [185.SparkStreaming - 概念 - 介绍](https://www.bilibili.com/video/BV11A411L7CK?p=185)
 #### [186.SparkStreaming - 概念 - 原理 & 特点](https://www.bilibili.com/video/BV11A411L7CK?p=186)
 #### [187.SparkStreaming - 入门 - WordCount - 实现](https://www.bilibili.com/video/BV11A411L7CK?p=187)
+下载安装netcat工具，用于模拟向指定端口发送数据
+下载地址：https://eternallybored.org/misc/netcat/
+安装时需要关闭杀毒软件，或者在杀毒软件中信任该软件，否则会被杀毒软件当做病毒，其中的 .exe 文件会被删除
+启动 netcat 向9999端口发送数据
+```shell
+E:\software\tools\netcat-win32-1.12>nc -lp 9999
+```
+在启动 SparkStreaming01_WordCount 程序
+![img.png](README/images/img-sparkstreaming-01.png)
 #### [188.SparkStreaming - 入门 - WordCount - 解析](https://www.bilibili.com/video/BV11A411L7CK?p=188)
 #### [189.SparkStreaming - DStream创建 - Queue](https://www.bilibili.com/video/BV11A411L7CK?p=189)
 #### [190.SparkStreaming - DStream创建 - 自定义数据采集器](https://www.bilibili.com/video/BV11A411L7CK?p=190)
