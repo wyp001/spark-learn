@@ -265,6 +265,8 @@ C:\Users\TRXK-01>nc -lp 9999
 ![img.png](README/images/193-sparkstreaming-state-02.png)
 #### [194.SparkStreaming - DStream转换 - 无状态操作 - transform](https://www.bilibili.com/video/BV11A411L7CK?p=194)
 #### [195.SparkStreaming - DStream转换 - 无状态操作 - join](https://www.bilibili.com/video/BV11A411L7CK?p=195)
+![img.png](README/images/195-DStream-无状态-01.png)
+![img.png](README/images/195-DStream-无状态-02.png)
 #### [196.SparkStreaming - DStream转换 - 有状态操作 - window](https://www.bilibili.com/video/BV11A411L7CK?p=196)
 #### [197.SparkStreaming - DStream转换 - 有状态操作 - window - 补充](https://www.bilibili.com/video/BV11A411L7CK?p=197)
 #### [198.SparkStreaming - DStream输出](https://www.bilibili.com/video/BV11A411L7CK?p=198)
