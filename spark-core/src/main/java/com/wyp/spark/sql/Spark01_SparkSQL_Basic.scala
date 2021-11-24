@@ -11,6 +11,7 @@ object Spark01_SparkSQL_Basic {
     // 1、创建SparkSQL的运行环境
     val sparkConf: SparkConf = new SparkConf().setMaster("local[*]").setAppName("sparkSQL")
     val spark: SparkSession = SparkSession.builder().config(sparkConf).getOrCreate()
+    import spark.implicits._    // 引入隐式转换规则，其中的spark 为 SparkSession 的实例名称
 
     // 2、执行逻辑操作
     // 构建 DataFrame
@@ -25,10 +26,16 @@ object Spark01_SparkSQL_Basic {
 
     // DataFrame => DSL
     // 在使用DataFrame时，如果涉及到转换操作，需要引入转换规则
-    import spark.implicits._    // 引入隐式转换规则，其中的spark 为 SparkSession 的实例名称
-    df.select("age", "username").show
-    df.select($"age" + 1).show
-    df.select('age + 1).show
+    //df.select("age", "username").show
+    //df.select($"age" + 1).show
+    //df.select('age + 1).show
+
+    // DataSet
+    // 构建DataSet
+    // DataFrame其实是特定泛型的DataSet
+    val seq = Seq(1, 2, 3, 4)
+    val ds: Dataset[Int] = seq.toDS()
+    ds.show()
 
     // /3、关闭环境
     spark.close()
