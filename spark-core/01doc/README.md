@@ -275,3 +275,5 @@ C:\Users\TRXK-01>nc -lp 9999
 #### [199.SparkStreaming - 优雅地关闭](https://www.bilibili.com/video/BV11A411L7CK?p=199)
 #### [200.SparkStreaming - 优雅地关闭 - 恢复数据](https://www.bilibili.com/video/BV11A411L7CK?p=200)
 #### [201.SparkStreaming - 案例实操 - 环境和数据准备](https://www.bilibili.com/video/BV11A411L7CK?p=201) 
+启动 SparkStreaming10_MockData 生成模拟数据推送到 kafka 中
+在启动 SparkStreaming11_Req1 消费kafka中的数据并输出到控制台
