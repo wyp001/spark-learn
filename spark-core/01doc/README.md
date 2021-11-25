@@ -277,3 +277,16 @@ C:\Users\TRXK-01>nc -lp 9999
 #### [201.SparkStreaming - 案例实操 - 环境和数据准备](https://www.bilibili.com/video/BV11A411L7CK?p=201) 
 启动 SparkStreaming10_MockData 生成模拟数据推送到 kafka 中
 在启动 SparkStreaming11_Req1 消费kafka中的数据并输出到控制台
+
+#### [202.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 分析]()
+需求一：实现实时的童泰黑名单机制：将每天对某个广告点击超过 100 次的用户拉黑。
+注：黑名单保存在MySQL中
+![img.png](README/images/202-sparkStreaming-案例-需求一分析.png)
+#### [203.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 功能实现 - 黑名单判断]()
+#### [204.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 功能实现 - 统计数据更新]()
+#### [205.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 功能实现 - 测试 & 简化 & 优化]()
+#### [206.尚硅谷_SparkStreaming - 案例实操 - 需求二 - 功能实现]()
+#### [207.尚硅谷_SparkStreaming - 案例实操 - 需求二 - 乱码问题]()
+#### [208.尚硅谷_SparkStreaming - 案例实操 - 需求三 - 介绍 & 功能实现]()
+#### [209.尚硅谷_SparkStreaming - 案例实操 - 需求三 - 效果演示]()
+#### [210.尚硅谷_SparkStreaming - 总结 - 课件梳理]()
