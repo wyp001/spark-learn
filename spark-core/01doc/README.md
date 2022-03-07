@@ -285,6 +285,10 @@ C:\Users\TRXK-01>nc -lp 9999
 #### [203.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 功能实现 - 黑名单判断]()
 #### [204.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 功能实现 - 统计数据更新]()
 #### [205.尚硅谷_SparkStreaming - 案例实操 - 需求一 - 功能实现 - 测试 & 简化 & 优化]()
+启动 SparkStreaming10_MockData$main() 模拟广告点击数据 发送到 kafka
+启动 SparkStreaming11_Req1_BlackList1$main() 后，随着不断消费kafka 中的模拟数据，
+user_ad_count的表中记录的 某个用户对某个广告的点击数不断更新，当一天内点击数大于30后将会被计入黑名单表中
+最终 随机生成的id为 1~6 的用户都将被加入到黑名单表（black_list）中
 #### [206.尚硅谷_SparkStreaming - 案例实操 - 需求二 - 功能实现]()
 #### [207.尚硅谷_SparkStreaming - 案例实操 - 需求二 - 乱码问题]()
 #### [208.尚硅谷_SparkStreaming - 案例实操 - 需求三 - 介绍 & 功能实现]()
