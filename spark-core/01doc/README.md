@@ -295,4 +295,7 @@ user_ad_count的表中记录的 某个用户对某个广告的点击数不断更
 #### [207.尚硅谷_SparkStreaming - 案例实操 - 需求二 - 乱码问题]()
 #### [208.尚硅谷_SparkStreaming - 案例实操 - 需求三 - 介绍 & 功能实现]()
 #### [209.尚硅谷_SparkStreaming - 案例实操 - 需求三 - 效果演示]()
+启动 SparkStreaming10_MockData$main() 生产模拟数据到kafka
+启动 SparkStreaming13_Req31$main() 消费kafka中的数据，将转换计算后的结果数据输出到 static/adclick/adclick.json 文件中
+前端 adClickCharts.html 定时读取 adclick.json 文件中的数据进行渲染
 #### [210.尚硅谷_SparkStreaming - 总结 - 课件梳理]()
