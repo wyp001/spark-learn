@@ -10,7 +10,7 @@ object WordCount01 {
     // 创建 Spark 上下文环境对象（连接对象）
     val sc: SparkContext = new SparkContext(sparkConf)
     // 读取文件数据
-    val lines = sc.textFile("datas")
+    val lines = sc.textFile("datas/wc")
     // 将文件中的数据进行分词
     val words = lines.flatMap(_.split(" "))
     // 转换数据结构 word => (word, 1)
